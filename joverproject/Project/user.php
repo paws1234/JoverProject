@@ -1,23 +1,19 @@
 <?php
-// Include the database connection file
 require_once 'db/db.php';
 
-// Start the session
+
 session_start();
 
-// Check if the user is logged in
+
 if (!isset($_SESSION['user'])) {
-    // Redirect to the login page if not logged in
     header("Location: login-form.php");
     exit();
 }
 
-// Get the user role from the session
 $userRole = $_SESSION['user']['role'];
 
-// Check if the user role is not 'user'
+
 if ($userRole !== 'user') {
-    // Redirect to an appropriate page (admin.php in this case)
     header("Location: admin.php");
     exit();
 }
