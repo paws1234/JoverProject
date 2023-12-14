@@ -1,0 +1,66 @@
+body {
+    background-color: #303030;
+    color: #ffffff;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+.bg-white {
+    background-color: #646262;
+}
+
+.bg-500 {
+    background-color: #ffa31a;
+}
+
+.text-gray-600 {
+    color: #000000;
+}
+
+.border {
+    border-color: #ffa31a;
+}
+
+
+.update-form {
+    position: absolute;
+    left: 37%;
+    top: 15%;
+}
+.update-form.black-bg {
+    background-color: #000000; /* Set the background color to black */
+}
+
+.update-form form {
+    max-width: 200%; 
+    width: 200%;
+    right: 70%;
+}
+
+.delete-form {
+    position: absolute;
+    left: 75%;
+    top: 51%;
+    width: 23%;
+}
+@media only screen and (max-width: 600px) {
+    .mb-8 {
+        margin-bottom: 4rem; /* Adjust margin for spacing on small screens */
+    }
+
+    .max-w-md {
+        max-width: 100%; /* Adjust as needed for small screens */
+    }
+
+    .update-form,
+    .delete-form {
+        position: static; /* Reset positioning for small screens */
+    }
+
+    .update-form form,
+    .delete-form form {
+        max-width: 100%; /* Adjust as needed for small screens */
+    }
+}
